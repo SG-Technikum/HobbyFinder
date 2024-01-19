@@ -1,0 +1,31 @@
+.top{
+    flex-direction: row;
+    background-color: #226;
+
+}
+.bottom{
+    flex-direction: row;
+    background-color: #124;
+}
+p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6{
+    color: #BBB;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+.spacer{
+    min-height: 50vh;
+}
+.left{
+
+}
+.right{
+
+}
+input{
+    padding: 1vw;
+    color: #556;
+    border-bottom: #778;
+    border-radius: 1vw;
+    fill: #445
+}
+
