@@ -15,12 +15,8 @@ p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6{
 .spacer{
     min-height: 50vh;
 }
-.left{
 
-}
-.right{
 
-}
 input{
     padding: 1vw;
     color: #556;
@@ -28,4 +24,5 @@ input{
     border-radius: 1vw;
     fill: #445
 }
+
 
