@@ -1,0 +1,12 @@
+{
+    "vereine":[
+        {
+            "name": "Sportiger Sportskanonenclub",
+            "tags" : ["Sport"]
+        },
+        {
+            "name" : "Schwimmverein Bad Segeberg",
+            "tags" : ["Sport"]
+        }
+    ]
+}
