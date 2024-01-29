@@ -5,5 +5,3 @@ function footer(){
     FooterElement.innerHTML = "text"
 }
 
-function getVereine(){}
-

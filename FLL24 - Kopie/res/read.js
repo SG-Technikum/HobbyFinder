@@ -1,3 +1,4 @@
+
 let vereine = []
 class verein{
     constructor(id, tags, description, email, loc){
@@ -5,7 +6,7 @@ class verein{
         this.tags = tags
         this.description = description
         this.email = email
-        this.loc = location
+        this.loca = loc
         vereine.push(this)
     }
 }
@@ -13,22 +14,44 @@ class verein{
 const Fischerclub = new verein(id="Freddys Fischerclub",
     tags=["teamwork", "fischen"],
     description="Freddys club in dem man mit freunden fischt, mindestalter 18",
-    email="<EMAIL>",
-    loc="Freiburg")
+    email="beispiel.beispiel@beispiel.com",
+    loca="Freiburg")
 const Schachverein = new verein(
     id="Sallys supertoller Schachverein",
     tags=["schach", "spiel"],
     description="text",
-    email="<EMAIL>",
-    loc="Bielefeld")
+    email="beispiel.beispiel@beispiel.com",
+    loca="Bielefeld")
 const TechnikumsAG = new verein(
     id="Technikums AG",
     tags=["technik", "teamwork"],
     description="was man halt so mit technik macht",
-    email="<EMAIL>",
-    loc="Brastelburg b. Lauchheim"
+    email="beispiel.beispiel@beispiel.com",
+    loca="Brastelburg b. Lauchheim"
 )
 
 //create one div for every verein here
 
+for (let i = 0; i < vereine.length; i++){
+    let vereinDiv = document.createElement("div")
+    let vereinHeader = document.createElement("h2")
+    vereinHeader.innerHTML = vereine[i].id
+    vereinDiv.id = vereine[i].tags
+    vereinDiv.className = "verein"
+    let vereinDescription = document.createElement("p")
+    vereinDescription.innerHTML += vereine[i].description
+    vereinDescription.innerHTML += "<br>"
+    let vereinContact = document.createElement("p")
+    vereinContact.innerHTML += vereine[i].email
+    vereinContact.innerHTML += "<br>"
+    let vereineLocation = document.createElement("h6")
+    vereineLocation.innerHTML += vereine[i].loca
+    vereineLocation.innerHTML += "<br>"
+    vereinDiv.appendChild(vereinHeader)
+    vereinDiv.appendChild(vereinDescription)
+    vereinDiv.appendChild(vereinContact)
+    vereinDiv.appendChild(vereineLocation)
 
+    console.log(vereinDiv)
+    document.getElementById("results").appendChild(vereinDiv)
+}
