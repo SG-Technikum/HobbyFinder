@@ -1,6 +1,9 @@
 
 function footer(){
     //insert footer text here
-    var FooterElement = document.getElementById8("footer");
+    var FooterElement = document.getElementById("footer");
     FooterElement.innerHTML = "text"
 }
+
+function getVereine(){}
+

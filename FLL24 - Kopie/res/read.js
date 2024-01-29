@@ -31,3 +31,4 @@ const TechnikumsAG = new verein(
 
 //create one div for every verein here
 
+
