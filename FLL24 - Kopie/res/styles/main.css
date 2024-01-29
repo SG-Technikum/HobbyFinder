@@ -59,4 +59,25 @@ html, body{
     border-radius: 0%;
     align-self: start;
 }
+.tags{
+    border-color: #DDD;
+    border-radius: 1vw;
+    border-style: solid;
+    display: inline
+    
+}
+h2{
+    display: inline;
+    padding-right: 10vw;
+}
+.verein{
+
+    padding-right: 10vw;
+    padding-left: 10vw;
+    border: #99B;
+    border-radius: 3vw;
+    border-style: solid;
+    background-color: #DDD;
+}
+
 
