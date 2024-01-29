@@ -23,19 +23,17 @@ p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6, input, button{
 
 .spacer{
     white-space: nowrap;
-
-    width:100%;
+    width:110%;
     height: 10%;
     image-rendering: pixelated;
     margin:none;
     border:none;
-    background-size:100%;
     background-size: cover;
   
     }
     .layer1{
+        transform: scaleY(-1);
         aspect-ratio: 15/1;
-        transform: scaleY(-1.6);
         background-image: url("png/wave-haikei.png");
     }
 
