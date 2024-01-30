@@ -1,5 +1,6 @@
-//Suchfenster
+//Suchfenster nach Name
 
-function SearchTags(){
-    
-}
+
+let results = document.getElementsByClassName("verein")
+
+console.log(results)
