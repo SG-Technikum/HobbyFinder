@@ -41,8 +41,19 @@ p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6, input, button{
 
 input{
     padding: 1vw;
+    margin: 1vw;
     color: #556;
-    border-bottom: #778;
+    border-color: #778;
+    border-style: solid;
+    border-radius: 1vw;
+    fill: #445
+}
+button{
+    padding: 1vw;
+    color: #556;
+    border-style: solid;
+    margin: 1vw;
+    border-color: #778;
     border-radius: 1vw;
     fill: #445
 }
@@ -71,13 +82,32 @@ h2{
     padding-right: 10vw;
 }
 .verein{
-
-    padding-right: 10vw;
-    padding-left: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     border: #99B;
     border-radius: 3vw;
     border-style: solid;
     background-color: #DDD;
 }
+.inline{
+    display:inline-block;
+    white-space: nowrap;
+    
+}
+img{
+    width: 18vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
 
 

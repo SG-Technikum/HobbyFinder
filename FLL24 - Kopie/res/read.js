@@ -33,21 +33,52 @@ const TechnikumsAG = new verein(
 //create one div for every verein here
 
 for (let i = 0; i < vereine.length; i++){
+
+    //inhalt einer box für jeden verein erstellen
     let vereinDiv = document.createElement("div")
-    let vereinHeader = document.createElement("h2")
-    vereinHeader.innerHTML = vereine[i].id
+    let vereinHeader = document.createElement("span")
+    vereinHeader.className = "header"
+    vereinHeader.className = "blacktext"
+
+    let vereinTitle = document.createElement("h2")
+    vereinTitle.className = "blacktext"
+
+    vereinTitle.innerHTML = vereine[i].id
     vereinDiv.id = vereine[i].tags
     vereinDiv.className = "verein"
+
+
+    let vereinTags = document.createElement("span")
+    vereinTags.className = "tags"
+    vereinTags.className = "blacktext"
+    vereinTags.innerHTML += vereine[i].tags
+
+    vereinHeader.appendChild(vereinTitle)
+    vereinHeader.appendChild(vereinTags)
+
     let vereinDescription = document.createElement("p")
+    vereinDescription.innerHTML += "Kurzbeschreibung: "
     vereinDescription.innerHTML += vereine[i].description
     vereinDescription.innerHTML += "<br>"
+    vereinDescription.className = "description"
+    vereinDescription.className = "blacktext"
+
     let vereinContact = document.createElement("p")
+    vereinContact.innerHTML += "Kontakt via Email: "
     vereinContact.innerHTML += vereine[i].email
     vereinContact.innerHTML += "<br>"
+    vereinContact.className = "contact"
+    vereinContact.className = "blacktext"
+
     let vereineLocation = document.createElement("h6")
+    vereineLocation.innerHTML += "Standort: "
     vereineLocation.innerHTML += vereine[i].loca
     vereineLocation.innerHTML += "<br>"
+    vereineLocation.className = "location"
+    vereineLocation.className = "blacktext"
+
     vereinDiv.appendChild(vereinHeader)
+    vereinDiv.appendChild(vereinTags)
     vereinDiv.appendChild(vereinDescription)
     vereinDiv.appendChild(vereinContact)
     vereinDiv.appendChild(vereineLocation)
