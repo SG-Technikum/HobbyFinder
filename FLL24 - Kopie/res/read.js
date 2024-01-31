@@ -38,20 +38,25 @@ for (let i = 0; i < vereine.length; i++){
     let vereinDiv = document.createElement("div")
     let vereinHeader = document.createElement("span")
     vereinHeader.className = "header"
-    vereinHeader.className = "blacktext"
 
-    let vereinTitle = document.createElement("h2")
-    vereinTitle.className = "blacktext"
+
+    let vereinTitle = document.createElement("h4")
+
 
     vereinTitle.innerHTML = vereine[i].id
     vereinDiv.id = vereine[i].tags
     vereinDiv.className = "verein"
 
 
-    let vereinTags = document.createElement("span")
+    let vereinTags = document.createElement("ul")
     vereinTags.className = "tags"
-    vereinTags.className = "blacktext"
-    vereinTags.innerHTML += vereine[i].tags
+    //loop through lit of zags and append each one to the span
+    for (let j = 0; j < vereine[i].tags.length; j++){
+        let vereinTag = document.createElement("li")
+        vereinTag.className = "tag"
+        vereinTag.innerHTML += vereine[i].tags[j]
+        vereinTags.appendChild(vereinTag)
+    }
 
     vereinHeader.appendChild(vereinTitle)
     vereinHeader.appendChild(vereinTags)
@@ -61,21 +66,19 @@ for (let i = 0; i < vereine.length; i++){
     vereinDescription.innerHTML += vereine[i].description
     vereinDescription.innerHTML += "<br>"
     vereinDescription.className = "description"
-    vereinDescription.className = "blacktext"
+
 
     let vereinContact = document.createElement("p")
     vereinContact.innerHTML += "Kontakt via Email: "
     vereinContact.innerHTML += vereine[i].email
     vereinContact.innerHTML += "<br>"
     vereinContact.className = "contact"
-    vereinContact.className = "blacktext"
 
     let vereineLocation = document.createElement("h6")
     vereineLocation.innerHTML += "Standort: "
     vereineLocation.innerHTML += vereine[i].loca
     vereineLocation.innerHTML += "<br>"
     vereineLocation.className = "location"
-    vereineLocation.className = "blacktext"
 
     vereinDiv.appendChild(vereinHeader)
     vereinDiv.appendChild(vereinTags)

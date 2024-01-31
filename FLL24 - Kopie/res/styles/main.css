@@ -1,12 +1,13 @@
 .top{
-    flex-direction: row;
+    display: flex;
     background-color: #226;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    align-content: center;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
 
 }
 .bottom{
@@ -23,8 +24,9 @@ p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6, input, button{
 
 .spacer{
     white-space: nowrap;
-    width:110%;
-    height: 10%;
+    width:100%;
+    height: 5%;
+    background-repeat: repeat-x;
     image-rendering: pixelated;
     margin:none;
     border:none;
@@ -33,8 +35,8 @@ p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6, input, button{
     }
     .layer1{
         transform: scaleY(-1);
-        aspect-ratio: 15/1;
-        background-image: url("png/wave-haikei.png");
+        aspect-ratio: 28/1;
+        background-image: url("png/wave-haikei-4.png");
     }
 
 
@@ -71,12 +73,13 @@ html, body{
     align-self: start;
 }
 .tags{
-    border-color: #DDD;
-    border-radius: 1vw;
-    border-style: solid;
-    display: inline
-    
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.4vw;
+    align-content: center;
 }
+ 
 h2{
     display: inline;
     padding-right: 10vw;
@@ -86,27 +89,41 @@ h2{
     margin-right: 10vw;
     padding-right: 5vw;
     padding-left: 5vw;
-    border: #99B;
+    border: #224;
     border-radius: 3vw;
     border-style: solid;
-    background-color: #DDD;
+    background-color: #113;
 }
 .inline{
-    display:inline-block;
-    white-space: nowrap;
-    
+    display:inline;
+    align-content: center;
+    white-space: nowrap; 
+    width: 60vw;
+    height: 10vh
 }
 img{
     width: 18vw;
     height: auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
+
 }
 .left{
     float: left;
 }
 .right{
     float: right;
+}
+ul, li{
+    display: inline;
+}
+.tag{
+    background-color: #445;
+    border: solid;
+    border-color: #445;
+    border-radius: 0.2vw;
+    margin-left: 0.3vw;
+    margin-right: 0.3vw;
+   
+    
 }
 
 

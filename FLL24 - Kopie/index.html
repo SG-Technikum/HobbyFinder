@@ -13,18 +13,22 @@
     <section class = "top">
         <span class="inline">
 
-            <input class = "left" placeholder="Suche Vereine"type="text" id="input">
+            <input class = "left" placeholder="Suche Vereine"type="text" id="searchwindow">
+
             <button class = "left" id="btn">suchen</button>
-            <img class = "right"class = "logo" src="res/styles/png/logo.jpeg" alt="HobbyFinder">
+            <script>
+                let p = document.getElementById("searchwindow").value
+                document.getElementById("btn").tags = p
+            </script>
+            <img class = "right" src="res/styles/png/logo.jpeg" alt="HobbyFinder">
         </span>
 
     </section>
 
     <section class = "bottom">
         <div class ="spacer layer1"></div>
-        <p></p>
+
         <div>
-            <p>lal</p>
             <div id="results">
                 <script type="text/javascript" src="res/read.js"></script>
 
