@@ -29,7 +29,26 @@ const TechnikumsAG = new verein(
     email="beispiel.beispiel@beispiel.com",
     loca="Brastelburg b. Lauchheim"
 )
+const AnglerVerein = new verein
+    (id="Manu's Anglerverein",
+    tags=["teamwork", "Angeln", "Edersee"],
+    description="Angeln mit Manuel W.",
+    email="info@angelclub.com",
+    loca="Edersee, an der Kurve")
 
+const Baschtelklub = new verein(
+    id="Sammys supertoller Bastelclub",
+    tags=["basteln", "spiel", "spaß"],
+    description="Hier wird viel gebastelt und experimentiert!!",
+    email="teilnehmen@basteln.de",
+    loca="Bastelbrugg")
+const Fluchschulungsvereinstrainingsprofessorausbildungsveranstaltungsorganisationsunternehmensveranstaltung = new verein(
+    id="Flugschule",
+    tags=["fliegen", "landen"],
+    description="Fliegen: APT-L und CPL-A für Anfänger!!!",
+    email="Flieger@böing.xyz",
+    loca="N 6th St, Renton, WA 98057, USA"
+)
 //create one div for every verein here
 
 for (let i = 0; i < vereine.length; i++){
