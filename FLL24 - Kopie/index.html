@@ -18,10 +18,8 @@
             <button class = "left" id="btn" onclick="enter()">suchen</button>
             <script>
                 function enter(){
-                    console.log("cligg!")
                     let p = document.getElementById("searchwindow").value
                     document.getElementById("btn").tags = p
-                    console.log(document.getElementById("btn").tags)
                     search()
                 }
                 
@@ -65,6 +63,28 @@
                     let prompt = document.getElementById("btn").tags
                     console.log(prompt)
                     console.log(document.getElementById("btn").tags)
+                    //if prompt is contained in the tag, change the background color of the tag to red and make it bigger
+                    if (TagList[j].includes(prompt)) {
+                        CorrespondingTags[j].style.borderColor = "#B45"
+                        CorrespondingTags[j].style.backgroundColor = "#622"
+                        CorrespondingTags[j].style.fontSize = "2.2vw"
+                        CorrespondingTags[j].style.color="#FCC"
+                        // if prompt is empty, return to the default settings
+                        if (prompt == "") {
+                            CorrespondingTags[j].style.borderColor = "#445"
+                            CorrespondingTags[j].style.backgroundColor = "#445"
+                            CorrespondingTags[j].style.fontSize = "1.6vw"
+                            CorrespondingTags[j].style.color = "#FFF"
+                        }
+                    }
+                    else{
+                        CorrespondingTags[j].style.borderColor = "#445"
+                        CorrespondingTags[j].style.backgroundColor = "#445"
+                        CorrespondingTags[j].style.fontSize = "1.2vw"
+                        //make tags alpha lower
+                        CorrespondingTags[j].style.color = "rgba(200, 200, 200, 0.3)"
+                    }
+                    
                 }
             }
 
