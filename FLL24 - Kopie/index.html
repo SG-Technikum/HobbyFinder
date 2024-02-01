@@ -11,14 +11,20 @@
 <body>
 
     <section class = "top">
-        <span class="inline">
+        <span class="inline">   
 
             <input class = "left" placeholder="Suche Vereine"type="text" id="searchwindow">
 
-            <button class = "left" id="btn">suchen</button>
+            <button class = "left" id="btn" onclick="enter()">suchen</button>
             <script>
-                let p = document.getElementById("searchwindow").value
-                document.getElementById("btn").tags = p
+                function enter(){
+                    console.log("cligg!")
+                    let p = document.getElementById("searchwindow").value
+                    document.getElementById("btn").tags = p
+                    console.log(document.getElementById("btn").tags)
+                    search()
+                }
+                
             </script>
             <img class = "right" src="res/styles/png/logo.jpeg" alt="HobbyFinder">
         </span>
@@ -37,7 +43,34 @@
             <br><br><br><br><br>
         </div>
     </section>
-    <script type="text/javascript" src="res/search.js"></script>
+    <script type="text/javascript">
+        function search(){
+                let results = document.getElementsByClassName("tags")
+
+            for (let i = 0; i < results.length; i++) {
+
+                //Tags zum jeweiligen Verein an Stelle i
+                let CorrespondingTags = results[i].getElementsByClassName("tag")
+                //save the innerhtml of each of the correspondingtags to a list
+                let TagList = []
+                for (let j = 0; j < CorrespondingTags.length; j++) {
+                    TagList.push(CorrespondingTags[j].innerHTML)
+                }
+                console.log(TagList)
+
+                //Suchfeld abgleichen
+                //tags mit Suchfeld abgleichen
+                for (let j = 0; j < TagList.length; j++) {
+                    //get text entered into text input field with id "searchwindow"
+                    let prompt = document.getElementById("btn").tags
+                    console.log(prompt)
+                    console.log(document.getElementById("btn").tags)
+                }
+            }
+
+        }
+        
+    </script>
 
 </body>
 </html>
