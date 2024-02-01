@@ -43,7 +43,7 @@ p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6, input, button{
 
 input{
     padding: 1vw;
-    margin: 1vw;
+    margin: 1em;
     color: #556;
     border-color: #778;
     border-style: solid;
@@ -51,10 +51,10 @@ input{
     fill: #445
 }
 button{
-    padding: 1vw;
+    padding: 1em;
     color: #556;
     border-style: solid;
-    margin: 1vw;
+    margin: 1em;
     border-color: #778;
     border-radius: 1vw;
     fill: #445
@@ -76,19 +76,19 @@ html, body{
     display: flex;
     flex-direction: row;
 
-    font-size: 1.4vw;
+    font-size: 1.4em;
     align-content: center;
 }
  
 h2{
     display: inline;
-    padding-right: 10vw;
+    padding-right: 10em;
 }
 .verein{
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-right: 5vw;
-    padding-left: 5vw;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding-right: 5em;
+    padding-left: 5em;
     border: #224;
     border-radius: 3vw;
     border-style: solid;
