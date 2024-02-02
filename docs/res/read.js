@@ -11,21 +11,21 @@ class verein{
     }
 }
 //weil json nicht geht
-const Fischerclub = new verein(id="Freddys Fischerclub",
-    tags=["teamwork", "fischen"],
-    description="Freddys club in dem man mit freunden fischt, mindestalter 18",
-    email="beispiel.beispiel@beispiel.com",
+const Fischerclub = new verein(id="Freddys Fischverein",
+    tags=["Teamwork", "Fischen"],
+    description="Freddys Verein in dem man mit Freunden fischt, Mindestalter 18",
+    email="lachs.sprotte@beispiel.com",
     loca="Freiburg")
 const TechnikumsAG = new verein(
     id="Technikums AG",
-    tags=["technik", "teamwork"],
-    description="was man halt so mit technik macht",
+    tags=["Technik", "Teamwork"],
+    description="was man halt so mit Technik macht",
     email="beispiel.beispiel@beispiel.com",
     loca="Aalen, Rombacher Straße"
 )
 const AnglerVerein = new verein
     (id="Manu's Anglerverein",
-    tags=["teamwork", "Angeln", "Edersee"],
+    tags=["Teamwork", "Angeln", "Edersee"],
     description="Angeln mit Manuel W.",
     email="info@angelclub.com",
     loca="Edersee, an der Kurve")
