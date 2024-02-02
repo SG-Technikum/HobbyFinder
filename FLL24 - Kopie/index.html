@@ -20,11 +20,11 @@
                 function enter(){
                     let p = document.getElementById("searchwindow").value
                     document.getElementById("btn").tags = p
-                    search()
+                    searchbyloc()
                 }
                 
             </script>
-            <img class = "right" src="res/styles/png/logo.png" alt="HobbyFinder">
+            <img class = "right" src="res/styles/png/logo.jpeg" alt="HobbyFinder">
         </span>
 
     </section>
@@ -42,11 +42,10 @@
         </div>
     </section>
     <script type="text/javascript">
-        function search(){
+        function searchbytag(){
                 let results = document.getElementsByClassName("tags")
 
             for (let i = 0; i < results.length; i++) {
-
                 //Tags zum jeweiligen Verein an Stelle i
                 let CorrespondingTags = results[i].getElementsByClassName("tag")
                 //save the innerhtml of each of the correspondingtags to a list
@@ -54,15 +53,14 @@
                 for (let j = 0; j < CorrespondingTags.length; j++) {
                     TagList.push(CorrespondingTags[j].innerHTML)
                 }
-                console.log(TagList)
+
 
                 //Suchfeld abgleichen
                 //tags mit Suchfeld abgleichen
                 for (let j = 0; j < TagList.length; j++) {
                     //get text entered into text input field with id "searchwindow"
                     let prompt = document.getElementById("btn").tags
-                    console.log(prompt)
-                    console.log(document.getElementById("btn").tags)
+
                     //if prompt is contained in the tag, change the background color of the tag to red and make it bigger
                     if (TagList[j].includes(prompt)) {
                         CorrespondingTags[j].style.borderColor = "#B45"
@@ -89,6 +87,48 @@
             }
 
         }
+        function searchbyloc(){
+            let results = document.getElementsByClassName("location")
+            console.log(results)
+
+            let TagList = []
+            for (let i = 0; i < results.length; i++){
+                TagList.push(results[i].innerHTML)
+            }
+            console.log(TagList)
+                //Tags zum jeweiligen Verein an Stelle i
+
+                //save the innerhtml of each of the correspondingtags to a list
+                //  mit Suchfeld abgleichen
+                for (let j = 0; j < TagList.length; j++) {
+                    //get text entered into text input field with id "searchwindow"
+                    let prompt = document.getElementById("btn").tags
+                    console.log(prompt)
+                    console.log(document.getElementById("btn").tags)
+                    let CorrespondingTags = results[j]
+                    //if prompt is contained in the tag, change the background color of the tag to red and make it bigger
+                    if (TagList[j].includes(prompt)) {
+
+                        CorrespondingTags.style.fontSize = "2.6vw"
+                        CorrespondingTags.style.color="#F55"
+                        // if prompt is empty, return to the default settings
+                        if (prompt == "") {
+                            CorrespondingTags.style.fontSize = "2.3vw"
+                            CorrespondingTags.style.color = "#FFF"
+                        }
+                    }
+                    else{
+
+                        CorrespondingTags.style.fontSize = "1.9vw"
+                        //make tags alpha lower
+                        CorrespondingTags.style.color = "rgba(200, 200, 200, 0.3)"
+                    }
+                    
+                }
+            
+
+        }
+        
         
     </script>
 

@@ -37,7 +37,7 @@ const AnglerVerein = new verein
     loca="Edersee, an der Kurve")
 
 const Baschtelklub = new verein(
-    id="Sammys supertoller Bastelclub",
+    id="Bobs Brilliander Baschdlklubb",
     tags=["basteln", "spiel", "spaß"],
     description="Hier wird viel gebastelt und experimentiert!!",
     email="teilnehmen@basteln.de",
