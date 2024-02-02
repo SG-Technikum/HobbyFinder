@@ -15,11 +15,18 @@
 
             <input class = "left" placeholder="Suche Vereine"type="text" id="searchwindow">
 
-            <button class = "left" id="btn" onclick="enter()">suchen</button>
+            <button class = "left" id="btna" onclick="entertags()">Nach Tags suchen</button>
+            <button class = "left" id="btnb" onclick="enterloc()">Nach Ort suchen</button>
+
             <script>
-                function enter(){
+                function entertags(){
                     let p = document.getElementById("searchwindow").value
-                    document.getElementById("btn").tags = p
+                    document.getElementById("btna").tags = p
+                    searchbytag()
+                }
+                function enterloc(){
+                    let p = document.getElementById("searchwindow").value
+                    document.getElementById("btnb").tags = p
                     searchbyloc()
                 }
                 
@@ -43,7 +50,7 @@
     </section>
     <script type="text/javascript">
         function searchbytag(){
-                let results = document.getElementsByClassName("tags")
+            let results = document.getElementsByClassName("tags")
 
             for (let i = 0; i < results.length; i++) {
                 //Tags zum jeweiligen Verein an Stelle i
@@ -59,10 +66,12 @@
                 //tags mit Suchfeld abgleichen
                 for (let j = 0; j < TagList.length; j++) {
                     //get text entered into text input field with id "searchwindow"
-                    let prompt = document.getElementById("btn").tags
+                    let prompt = document.getElementById("btna").tags
+                    //make prompt lowercase
+                    prompt = prompt.toLowerCase()
 
                     //if prompt is contained in the tag, change the background color of the tag to red and make it bigger
-                    if (TagList[j].includes(prompt)) {
+                    if (TagList[j].toLowerCase().includes(prompt)) {
                         CorrespondingTags[j].style.borderColor = "#B45"
                         CorrespondingTags[j].style.backgroundColor = "#622"
                         CorrespondingTags[j].style.fontSize = "2.2vw"
@@ -102,12 +111,13 @@
                 //  mit Suchfeld abgleichen
                 for (let j = 0; j < TagList.length; j++) {
                     //get text entered into text input field with id "searchwindow"
-                    let prompt = document.getElementById("btn").tags
+                    let prompt = document.getElementById("btnb").tags
+                    prompt = prompt.toLowerCase()
                     console.log(prompt)
-                    console.log(document.getElementById("btn").tags)
+                    console.log(document.getElementById("btnb").tags)
                     let CorrespondingTags = results[j]
                     //if prompt is contained in the tag, change the background color of the tag to red and make it bigger
-                    if (TagList[j].includes(prompt)) {
+                    if (TagList[j].toLowerCase().includes(prompt)) {
 
                         CorrespondingTags.style.fontSize = "2.6vw"
                         CorrespondingTags.style.color="#F55"

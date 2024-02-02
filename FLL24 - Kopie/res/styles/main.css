@@ -5,8 +5,9 @@
     align-content: center;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 90vw;
     
 
 }
@@ -98,7 +99,7 @@ h2{
     display:inline;
     align-content: center;
     white-space: nowrap; 
-    width: 60vw;
+    width: 90vw;
     height: 10vh
 }
 img{
