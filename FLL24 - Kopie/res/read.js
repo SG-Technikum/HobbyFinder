@@ -47,7 +47,7 @@ const Judogruppe = new verein(id="Johannes Judogruppe",
     email="jojo@judo.com",
     loca="Alexanderplatz, Berlin")
 const Jodelclub = new verein(id="Judiths Jodelclub",
-    tags=["Jodeln", "Mit Freuden", "Singen", "Laut"],
+    tags=["Jodeln", "Mit Freude und Freunden", "Singen", "Laut"],
     description="Judiths Jodelclub, Jodel Laut mit Freude und Freunden, du kannst dafür auch ein Jodeldiplom erhalten!",
     email="jodeldiplom@gmail.com",
     loca="Kempten im Allgäu")
