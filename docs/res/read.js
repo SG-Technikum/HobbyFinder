@@ -38,12 +38,12 @@ const Fluchschulungsvereinstrainingsprofessorausbildungsveranstaltungsorganisati
 )
 const Internetcafe = new verein(id="Igors Internet-Cafe Experimental (ICE)",
     tags=["Internet", "Kaffe", "Computer", "Kaffee Maschine bedienen"],
-    description="Igors Internet Café!programmier mit Freunden und trink dabei Kaffee, Mindestalter 14",
+    description="Igors Internet Café. Programmier mit Freunden und trink dabei Kaffee, Mindestalter 14",
     email="Trink.Cafe@gmail.com",
     loca="Zella-Mehlis")
 const Judogruppe = new verein(id="Johannes Judogruppe",
     tags=["Kämpfen", "Judo", "Turniere", "Fallen"],
-    description="Johannes Judogruppe. Lernen wie man sich verteidigt und andere Leute zu Fall bringen kann, mindestalter 16",
+    description="Johannes Judogruppe. Lernen wie man sich verteidigt und andere Leute zu Fall bringen kann, Mindestalter 16",
     email="jojo@judo.com",
     loca="Alexanderplatz, Berlin")
 const Jodelclub = new verein(id="Judiths Jodelclub",
