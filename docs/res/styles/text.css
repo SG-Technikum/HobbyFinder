@@ -49,3 +49,7 @@ div{
 .blacktext{
     color: #000;
 }
+.klein{
+    font-size:0.9vw;
+    color: #788
+}
