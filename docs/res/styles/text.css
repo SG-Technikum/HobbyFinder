@@ -2,46 +2,38 @@ footer{
     font-size: smaller;
     font-weight: 300;
 }
-p, a, li, ul, ol{
-    font-size: 1.8vw;
+p, a, li, ul, ol, h1, h2, h3, h4, h5, h6{
+    font-size: 2.4vh;
+    font-weight: 400;
 }
-h6{
-    font-size: 2.3vw;
-}
-h5{
-    font-size: 2.5vw;
-}
+
 h4{
-    font-size: 2.8vw;
     text-decoration-line: underline;
 }
 h3{
-    font-size: 3.1vw;
     text-decoration-line: underline;
 
 }
 h2{
-    font-size: 3.4vw;
     text-decoration-line: underline;
 
 }
 h1{
-    font-size: 3.6vw;
     text-decoration-line: underline;
 
 }
 b{
-    font-weight: 700;
+    font-weight: 800;
 }
 a{
     text-decoration-line: none;
     color: #74D
 }
 h1, h2, h3{
-    font-weight: 600;
+    font-weight: 800;
 }
 h4, h5, h6{
-    font-weight: 500;
+    font-weight: 700;
 }
 div{
     margin-bottom: 2vh;
@@ -50,6 +42,6 @@ div{
     color: #000;
 }
 .klein{
-    font-size:0.9vw;
+    font-size:1vh;
     color: #788
 }

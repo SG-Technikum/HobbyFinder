@@ -19,7 +19,6 @@
 p, a, b, li, ul, ol, h1, h2, h3, h4, h5, h6, input, button{
     color: #DDD;
     font-family: 'Trebuchet MS', sans-serif;
-    font-weight: 500;
 }
 
 
@@ -77,8 +76,8 @@ html, body{
     display: flex;
     flex-direction: row;
 
-    font-size: 1.4vw;
-    align-content: center;
+    font-size: 1.8vw;
+    align-content:flex-start;
 }
  
 h2{
@@ -103,7 +102,7 @@ h2{
     height: 10vh
 }
 img{
-    width: 18vw;
+    width: 22vw;
     height: auto;
 
 }
