@@ -45,3 +45,6 @@ div{
     font-size:1vh;
     color: #788
 }
+button, input{
+    font-size: 1.8vw;
+}

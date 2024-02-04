@@ -8,6 +8,7 @@
     padding-left: 5vw;
     padding-right: 5vw;
     width: 90vw;
+    min-height: 14vw;
     
 
 }
@@ -48,7 +49,8 @@ input{
     border-color: #778;
     border-style: solid;
     border-radius: 1vw;
-    fill: #445
+    fill: #445;
+    width: 24vw
 }
 button{
     padding: 1vw;
@@ -57,7 +59,8 @@ button{
     margin: 1vw;
     border-color: #778;
     border-radius: 1vw;
-    fill: #445
+    fill: #445;
+    width: 16vw;
 }
 html, body{
 
@@ -71,6 +74,7 @@ html, body{
     padding: 0%;
     border-radius: 0%;
     align-self: start;
+    align-content: center;
 }
 .tags{
     display: flex;
@@ -93,6 +97,11 @@ h2{
     border-radius: 3vw;
     border-style: solid;
     background-color: #113;
+    min-width: 30vw;
+    max-width: 70vw;
+    min-height: 20vh;
+    max-height: 60vh;
+    align-self: center;
 }
 .inline{
     display:inline;
@@ -104,7 +113,6 @@ h2{
 img{
     width: 22vw;
     height: auto;
-
 }
 .left{
     float: left;

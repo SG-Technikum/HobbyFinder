@@ -124,13 +124,14 @@ for (let i = 0; i < vereine.length; i++){
     vereinDescription.className = "description"
 
 
-    let vereinContact = document.createElement("p")
+    let vereinContact = document.createElement("a")
     vereinContact.innerHTML += "Kontakt via Email: "
     vereinContact.innerHTML += vereine[i].email
     vereinContact.innerHTML += "<br>"
     vereinContact.className = "contact"
+    vereinContact.href = "mailto:" + vereine[i].email
 
-    let vereineLocation = document.createElement("h6")
+    let vereineLocation = document.createElement("p")
     vereineLocation.innerHTML += "Standort: "
     vereineLocation.innerHTML += vereine[i].loca
     vereineLocation.innerHTML += "<br>"
